@@ -16,6 +16,11 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.0.1 - February 4th 2014 (build 1010)
+
+- Generic:
+    - Fixed video trimming feature in release build
+
 ### v1.0 - February 3rd 2014 (build 1000)
 
 - Generic:
