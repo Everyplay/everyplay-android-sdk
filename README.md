@@ -16,6 +16,17 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.0.2 - February 7th 2014 (build 1020)
+
+- Generic:
+    - Apps submitted to Play Store didn't remove the sandbox status
+      or the ability to upload private videos
+
+    - Fixed some sluggish activity behaviour when swapping activities
+      to/from the video player
+
+    - Localization improvements
+
 ### v1.0.1 - February 4th 2014 (build 1010)
 
 - Generic:
