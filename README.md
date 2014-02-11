@@ -3,6 +3,8 @@ for your game. You can get these along with the latest integration instructions 
 
 You can always download the latest SDK upgrades directly from https://github.com/everyplay/everyplay-android-sdk
 
+Looking for iOS version? See https://github.com/everyplay/everyplay-ios-sdk
+
 Everyplay SDK is licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html)
 
 For now, each SDK release has an expiration date. After expiring, there's a warning dialog on launch
