@@ -13,10 +13,26 @@ channels won't have this behaviour.
 
 Current and previous expiration dates:
 
-- 2014-03-31 (releases from 1.0 to CURRENT)
+- 2014-04-30 (releases from 1.0.3 to CURRENT)
+- 2014-03-31 (releases from 1.0 to 1.0.2)
 
 Everyplay SDK/Android - Release Notes
 =====================================
+
+### v1.0.3 - March 5th 2014 (build 1030)
+
+- Generic:
+    - First bunch of graphics optimization improvements, especially for Qualcomm
+      and Mali GPUs. Depending on hardware used, up to 4x framerate improvement
+      while recording
+
+    - Generic activity handling improvements
+
+    - There's now a warning dialog if the developer has not configured clientId,
+      clientSecret and redirectUri. They're required before entering Everyplay
+      related activities
+
+    - Nexus 10 support now enabled from server side remote settings
 
 ### v1.0.2 - February 7th 2014 (build 1020)
 
