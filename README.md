@@ -19,7 +19,7 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
-### v1.0.4 - March 10th 2014 (build 1040)
+### v1.0.4 - March 10th 2014 (build 1041)
 
 - Generic:
     - Fixed a regression with OpenGL ES1 support
