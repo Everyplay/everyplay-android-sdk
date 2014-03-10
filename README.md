@@ -19,6 +19,16 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.0.4 - March 10th 2014 (build 1040)
+
+- Generic:
+    - Fixed a regression with OpenGL ES1 support
+
+    - UI localization support for Simplified Chinese
+
+    - Workaround for Broadcom VideoCore IV related crash and
+      early work towards supporting it in general
+
 ### v1.0.3 - March 5th 2014 (build 1030)
 
 - Generic:
