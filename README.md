@@ -13,11 +13,27 @@ channels won't have this behaviour.
 
 Current and previous expiration dates:
 
-- 2014-04-30 (releases from 1.0.3 to CURRENT)
+- 2014-05-31 (releases from 1.0.5 to CURRENT)
+- 2014-04-30 (releases from 1.0.3 to 1.0.4)
 - 2014-03-31 (releases from 1.0 to 1.0.2)
 
 Everyplay SDK/Android - Release Notes
 =====================================
+
+### v1.0.5 - April 7th 2014 (build 1050)
+
+- Generic:
+    - Fixed multiple OpenGL graphics state issues that
+      were triggered on some devices and use cases
+
+    - Fixed potential frame flickering and jerking issues
+
+    - Fixed thumbnail graphics issues and rare crashes
+
+    - Improved the image quality of downscaled video frame
+
+- Unity plugin:
+    - New graphics integration support for iOS
 
 ### v1.0.4 - March 10th 2014 (build 1041)
 
