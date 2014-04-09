@@ -20,9 +20,13 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
-### v1.0.5 - April 7th 2014 (build 1050)
+### v1.0.5 - April 7th 2014 (build 1051)
 
 - Generic:
+    - Build 1051: Workarounds for Vivante / HiSilicon GPU
+      driver behaviour while not recording and early work
+      towards supporting it in general
+
     - Fixed multiple OpenGL graphics state issues that
       were triggered on some devices and use cases
 
