@@ -13,12 +13,75 @@ channels won't have this behaviour.
 
 Current and previous expiration dates:
 
-- 2014-05-31 (releases from 1.0.5 to CURRENT)
+- 2014-09-14 (releases from 1.1 to CURRENT)
+- 2014-05-31 (releases from 1.0.5 to 1.0.6)
 - 2014-04-30 (releases from 1.0.3 to 1.0.4)
 - 2014-03-31 (releases from 1.0 to 1.0.2)
 
 Everyplay SDK/Android - Release Notes
 =====================================
+
+### v1.1 - May 14th 2014 (build 1100)
+
+- Generic:
+    - Everyplay now uses Facebook SDK for improved, seamless Facebook login support.
+      If not linked into the project, the old login convention applies
+
+    - The new improved Facebook login shares via Everyplay Facebook application,
+      not through your existing Facebook application credentials. For immediate
+      use, you might need to send your iOS bundle information or Android key
+      hash to get started, please contact support@everyplay.com. We're currently
+      working on making this step automated without extra work required on
+      developers behalf
+
+    - Generic graphics optimizations and improvements to graphics
+      related resource allocating and releasing, which could have
+      led to invalid graphics state in earlier releases
+
+    - Improved recording state handling, orientation changing while
+      recording etc
+
+    - Worked around OpenGL performance issue that could happen on some devices
+      after returning from Everyplay videoplayer activity that's triggered by
+      playLastRecording method
+
+    - Fixed a rare exception crash thrown by MediaCodec.dequeueInputBuffer
+
+    - Improved movie merging behaviour and exception handling
+
+    - Don't show 'Launch game' button when the game is already active one
+
+    - Improved onEveryplayReadyForRecording(int enabled) listener events
+      to return false for more cases where the recording isn't going to
+      be supported
+
+- Unity plugin:
+    - Improved Facebook integration, this requires the use of "Facebook for Unity" asset
+      available from the Asset Store
+
+    - Lots of internal plugin changes and file location changes for better Unity integration,
+      the migration should be seamless without removing previous assets
+
+    - New prefables integration. Instead of dragging a prefab to your first scene
+      you may use the Edit / Everyplay Settings menu to enable Everyplay and to
+      set your game credentials. This also allows you to temporarily disable
+      Everyplay without removing the package
+
+    - Double check that clientId, secret and redirectURI settings have merged into
+      the new Edit / Everyplay Settings menu after upgrading
+
+    - Calling Everyplay through the SharedInstance is now deprecated. You may still
+      use the old way, but the recommended way is to call Everyplay.methodName
+
+    - Added checkboxes to new Everyplay settings menu for enabling Everyplay per
+      platform (iOS/Android)
+
+    - iOS Everyplay.framework and bundle are now directly embedded into the package
+      and used as the only option
+
+    - Old test button functionality in Everyplay.prefab has been moved to
+      Plugins/Everyplay/Helpers/EveryplayTest.prefab. A new simplified one can
+      be enabled through Edit / Everyplay Settings menu
 
 ### v1.0.5 - April 7th 2014 (build 1051)
 
