@@ -21,6 +21,23 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.1.1 - May 20th 2014 (build 1110)
+
+- Generic:
+
+    - Workaround for ImgTec PowerVR GPU driver behaviour that
+      could cause entire device to freeze after initialization
+
+    - Fix videoplayer seeking from causing a crash on some
+      devices with faulty drivers
+
+    - Fix for potential video encoding thread hanging on some
+      devices like Samsung Galaxy S3
+
+    - Improved sending onEveryplayRecordingStarted listener events
+
+    - Add onEveryplayAccountDidChange listener event
+
 ### v1.1 - May 14th 2014 (build 1100)
 
 - Generic:
