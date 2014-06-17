@@ -21,6 +21,28 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.1.2 - June 17th 2014 (build 1120)
+
+- Generic:
+
+    - Fixed recording from not working if changing MSAA anti-aliasing
+      state during runtime
+
+    - Fixed a potential Qualcomm specific issue with rendering
+      modal share dialog borders
+
+    - Improved upload handling
+
+    - Improved videoplayer thread safety
+
+- Unity plugin:
+
+    - Fixed iOS build error against Unity 4.5.1
+
+    - Fixed a potential exception error with Xcode project editor
+
+    - Updated WWW constructor parameters for Unity 4.5+
+
 ### v1.1.1 - May 20th 2014 (build 1110)
 
 - Generic:
