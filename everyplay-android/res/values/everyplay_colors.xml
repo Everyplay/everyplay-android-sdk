@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="everyplay_editor_button_background">#E6000000</color>
+    <color name="everyplay_editor_button_text">#FFFFFF</color>
+    <color name="everyplay_sidemenubutton_badge_background">#FFc21900</color>
+    <color name="everyplay_sidemenubutton_header_text_color">#FFFFFFFF</color>
+    <color name="everyplay_sidemenubutton_description_text_color">#FF909090</color>
+    <color name="everyplay_sidemenubutton_badge_text">#FFFFFF</color>
+    <color name="everyplay_blue">#0a4495</color>
+    <color name="everyplay_topbar_actionbutton_text_color">#FFFFFF</color>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/everyplay_sidemenu_button">
+
+    <com.everyplay.Everyplay.view.EveryplayImageView
+        android:id="@+id/sideMenuButtonIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:scaleType="fitXY"
+        android:minWidth="20dp"
+        android:minHeight="20dp"/>
+ 
+    <LinearLayout
+        android:id="@+id/sideMenuButtonTextContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/sideMenuButtonIcon"
+        android:orientation="vertical" 
+        android:minWidth="20dp"
+        android:minHeight="20dp"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:id="@+id/sideMenuButtonHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/everyplay_sidemenubutton_header_text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/sideMenuButtonDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/everyplay_sidemenubutton_description_text_color" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sideMenuButtonBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@color/everyplay_sidemenubutton_badge_background"
+        android:textColor="@color/everyplay_sidemenubutton_badge_text" 
+        android:textStyle="bold" />
+        
+</RelativeLayout>

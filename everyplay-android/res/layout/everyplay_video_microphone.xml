@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <com.everyplay.Everyplay.view.EveryplayImageButton
+        android:id="@+id/everyplayMicrophoneAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/everyplay_video_facecam_bg" />
+
+    <ImageButton
+        android:id="@+id/everyplayShowMicrophoneAvatar"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/everyplay_video_icon_audio_commentary" 
+        android:scaleType="fitCenter" 
+        android:background="@drawable/everyplay_editor_button_background" />
+
+</LinearLayout>

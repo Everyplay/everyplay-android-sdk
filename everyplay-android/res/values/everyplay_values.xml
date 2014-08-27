@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splashscreen_bgColor">#FF0A4495</color>
+    <color name="splashscreen_statusTextColor">#FFFFFFFF</color>
+    <color name="splashscreen_retryButtonTextColor">#FFFFFFFF</color>
+    <color name="everyplayBlack">#FF000000</color>
+</resources>

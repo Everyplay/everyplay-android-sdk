@@ -4,6 +4,8 @@ for your game. You can get these along with the latest integration instructions 
 You can always download the latest SDK upgrades directly from https://github.com/everyplay/everyplay-android-sdk
 
 Looking for iOS version? See https://github.com/everyplay/everyplay-ios-sdk
+Looking for Unity plugin? See https://github.com/everyplay/everyplay-unity-sdk
+Looking for Adobe AIR version? See https://github.com/everyplay/everyplay-air-sdk
 
 Everyplay SDK is licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html) with restrictions. Please see Everyplay Terms of Service at https://everyplay.com/developer-terms-of-service for more information.
 
@@ -13,13 +15,38 @@ channels won't have this behaviour.
 
 Current and previous expiration dates:
 
-- 2014-09-14 (releases from 1.1 to CURRENT)
+- 2015-01-31 (releases from 1.1.3 to CURRENT)
+- 2014-09-14 (releases from 1.1 to 1.1.2)
 - 2014-05-31 (releases from 1.0.5 to 1.0.6)
 - 2014-04-30 (releases from 1.0.3 to 1.0.4)
 - 2014-03-31 (releases from 1.0 to 1.0.2)
 
 Everyplay SDK/Android - Release Notes
 =====================================
+
+### v1.1.3 - Aug 27th 2014 (build 1130)
+
+- Generic:
+    - First official support for non-Unity game engines. For Android
+      example applications, check out:
+
+      https://github.com/Everyplay/everyplay-android-examples
+
+    - Now comes with Adobe AIR support:
+
+      https://github.com/Everyplay/everyplay-air-sdk
+
+    - Some devices and applications had image quality issues/artifacts
+      before video encoding step, fixed
+
+    - Starting recording with HUD-less enabled could have caused frame
+      glitch once while starting, fixed
+
+    - Fix network retry handling in Everyplay splash screen
+
+    - Analytics improvements
+
+    - Unity plugin relocated to https://github.com/everyplay/everyplay-unity-sdk
 
 ### v1.1.2 - June 17th 2014 (build 1120)
 

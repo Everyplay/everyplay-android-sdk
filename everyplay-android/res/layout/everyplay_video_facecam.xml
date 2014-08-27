@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/everyplayFaceCamVideoPlayerContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/everyplay_video_facecam_bg"
+        android:padding="1dp" >
+
+        <com.everyplay.Everyplay.view.videoplayer.EveryplayGenericVideoPlayerView
+            android:id="@+id/everyplayFaceCamVideoPlayer"
+            android:layout_width="100dp"
+            android:layout_height="100dp" >
+        </com.everyplay.Everyplay.view.videoplayer.EveryplayGenericVideoPlayerView>
+    </RelativeLayout>
+    
+    <ImageButton
+        android:id="@+id/everyplayShowFaceCamButton"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/everyplay_video_icon_facecam" 
+        android:scaleType="fitCenter" 
+        android:background="@drawable/everyplay_editor_button_background" />
+
+</LinearLayout>
