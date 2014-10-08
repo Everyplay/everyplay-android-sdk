@@ -24,6 +24,12 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.1.5 - Oct 9th 2014 (build 1150)
+
+- Generic:
+    - Fixed Facebook sharing to work against Facebook API 2.0
+      and later
+
 ### v1.1.4 - Oct 1st 2014 (build 1140)
 
 - Generic:
