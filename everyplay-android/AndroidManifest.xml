@@ -56,7 +56,7 @@
        <activity
          android:name="com.everyplay.Everyplay.view.auth.EveryplayAuthActivity"
            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
-           android:theme="@android:style/Theme.Dialog"
+           android:theme="@android:style/Theme.NoTitleBar"
            android:screenOrientation="sensor"
            android:hardwareAccelerated="true"
            android:windowSoftInputMode="adjustResize" />

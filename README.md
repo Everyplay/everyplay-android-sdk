@@ -24,6 +24,16 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.1.6 - Nov 10th 2014 (build 1160)
+
+- Generic:
+    - Changes to activity handling in code and on AndroidManifest.xml
+      to fix GPU driver issues and potential crashes
+
+    - Improved AAC encoded sound quality
+
+    - Improved Facebook behaviour for the future
+
 ### v1.1.5 - Oct 9th 2014 (build 1150)
 
 - Generic:
