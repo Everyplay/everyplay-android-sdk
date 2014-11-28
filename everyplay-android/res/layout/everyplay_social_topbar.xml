@@ -49,7 +49,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:textSize="18dp"
-        android:textColor="#FFFFFFFF"
+        android:textColor="@color/everyplay_theme_topbar_title_text_color"
         android:gravity="center"
         android:text="@string/everyplay_text"
         android:visibility="gone" />
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
-            android:textColor="#FFFFFFFF"
+            android:textColor="@color/everyplay_theme_topbar_title_text_color"
             android:textSize="15sp"
             android:text="@string/everyplay_upload_text" />
 
@@ -105,14 +105,20 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="5dp"
         android:visibility="gone"
-        android:textSize="15dp"
+        android:textSize="14dp"
         android:textStyle="bold"
-        android:textColor="@color/everyplay_topbar_actionbutton_text_color"
+        android:textColor="@color/everyplay_theme_button_text_color"
         android:gravity="center"
         android:paddingTop="1dp"
         android:paddingBottom="1dp"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
-        android:background="@drawable/everyplay_button_blue" />
+        android:background="@drawable/everyplay_theme_button_background" />
+
+    <View android:id="@+id/everyplayNativeOverlayTopBar"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:background="@color/everyplay_native_overlay_background"
+        android:visibility="gone"/>
 
 </RelativeLayout>

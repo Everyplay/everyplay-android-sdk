@@ -4,7 +4,9 @@ for your game. You can get these along with the latest integration instructions 
 You can always download the latest SDK upgrades directly from https://github.com/everyplay/everyplay-android-sdk
 
 Looking for iOS version? See https://github.com/everyplay/everyplay-ios-sdk
+<br />
 Looking for Unity plugin? See https://github.com/everyplay/everyplay-unity-sdk
+<br />
 Looking for Adobe AIR version? See https://github.com/everyplay/everyplay-air-sdk
 
 Everyplay SDK is licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html) with restrictions. Please see Everyplay Terms of Service at https://everyplay.com/developer-terms-of-service for more information.
@@ -23,6 +25,33 @@ Current and previous expiration dates:
 
 Everyplay SDK/Android - Release Notes
 =====================================
+
+### v1.2 - Nov 28th 2014 (build 1200)
+
+- Generic:
+    - Generic optimizations against the new Everyplay community
+
+    - New navigation top bar design to give more space while browsing
+
+    - Network access and caching optimizations
+
+    - Internal changes for UI theming support
+
+    - 3rdparty java code is relocated to another package namespace
+      to avoid conflicts
+
+    - Performance updates to media merging and trimming
+
+    - Everyplay.setMaxRecordingMinutesLength didn't trim the
+      resulting video, fixed
+
+    - Fixed potential crash issue with camera photo picker
+
+    - Upload performance improvements
+
+    - Everyplay.initEveryplay now retains IEveryplayListener
+
+    - Try-catch blocks for rare exceptions added
 
 ### v1.1.6 - Nov 10th 2014 (build 1160)
 

@@ -19,8 +19,7 @@
 #   public *;
 #}
 
--keep public class com.googlecode.mp4parser.**
--keep public class com.coremedia.**
+-keep public class com.everyplay.external.**
 -keep public class com.everyplay.Everyplay.Everyplay
 -keep public class com.everyplay.Everyplay.communication.EveryplayNativeBridge
 -keep public interface com.everyplay.Everyplay.IEveryplayListener
@@ -39,8 +38,8 @@
   public *;
 }
 
--keep public class * implements com.coremedia.iso.boxes.Box
--keepclassmembers class * implements com.coremedia.iso.boxes.Box {
+-keep public class * implements com.everyplay.external.iso.boxes.Box
+-keepclassmembers class * implements com.everyplay.external.iso.boxes.Box {
    public *;
 }
 

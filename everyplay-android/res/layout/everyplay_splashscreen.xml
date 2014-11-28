@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/splashscreen_bgColor" >
+    android:background="@color/everyplay_theme_splashscreen_background" >
 
     <LinearLayout
         android:id="@+id/splashScreenLinearLayout"
@@ -35,23 +35,15 @@
             android:minHeight="35dp"
             android:minWidth="35dp" />
 
-        <EditText
+        <TextView 
             android:id="@+id/splashScreenStatusText"
-            style="android:none"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:background="@color/splashscreen_bgColor"
-            android:clickable="false"
-            android:ems="10"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:gravity="center"
-            android:longClickable="false"
-            android:textColor="@color/splashscreen_statusTextColor"
-            android:textColorHint="@color/splashscreen_statusTextColor"
             android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/everyplay_theme_splashscreen_statustext_color"
             android:text="@string/everyplay_loading_text" />
 
         <Button
@@ -61,11 +53,11 @@
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/everyplay_button_green"
+            android:background="@drawable/everyplay_theme_distinct_button_background"
             android:minHeight="40dp"
             android:minWidth="100dip"
-            android:textColor="@color/splashscreen_retryButtonTextColor"
-            android:textColorHint="@color/splashscreen_retryButtonTextColor"
+            android:textColor="@color/everyplay_theme_splashscreen_retrybutton_text_color"
+            android:textColorHint="@color/everyplay_theme_splashscreen_retrybutton_text_color"
             android:text="@string/everyplay_retry_text" />
     </LinearLayout>
 

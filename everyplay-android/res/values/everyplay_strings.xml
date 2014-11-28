@@ -26,4 +26,5 @@
   <string name="everyplay_connection_failed">Connection failed!</string>
   <string name="everyplay_connection_timeout">Connection timed out!</string>
   <string name="everyplay_connection_success">Connection successful!</string>
+  <string name="everyplay_close_confirmation_text">Tap again to exit</string>
 </resources>

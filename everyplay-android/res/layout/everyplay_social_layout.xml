@@ -7,25 +7,29 @@
         android:id="@+id/everyplaySocialLayoutSideMenu"
         android:layout_width="260dp"
         android:layout_height="match_parent"/>
-    
-    <include
-        android:id="@+id/everyplaySocialLayoutTopBar"
-        layout="@layout/everyplay_social_topbar"
-        android:layout_height="45dp"
-        android:layout_width="match_parent" />
+
+    <View android:id="@+id/everyplayNativeOverlaySideMenu"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:background="@color/everyplay_native_overlay_background"
+        android:visibility="gone"/>
 
     <com.everyplay.Everyplay.view.EveryplayWebView
         android:id="@+id/everyplaySocialLayoutWebView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/everyplaySocialLayoutTopBar"
         android:background="@color/everyplay_blue" />
+
+    <include
+        android:id="@+id/everyplaySocialLayoutTopBar"
+        layout="@layout/everyplay_social_topbar"
+        android:layout_height="45dp"
+        android:layout_width="match_parent" />
     
     <View android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/everyplaySocialLayoutTopBar"
         android:id="@+id/everyplaySocialLayoutWebViewCover" />
-    
+
     <include layout="@layout/everyplay_splashscreen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

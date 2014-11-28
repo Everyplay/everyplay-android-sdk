@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/sideMenuScrollView"
-    android:background="@drawable/everyplay_sidemenu_bg" >
+    android:background="@drawable/everyplay_theme_sidemenu_background" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,6 +11,4 @@
         android:orientation="vertical"
         android:id="@+id/sideMenuItemsContainer">
     </LinearLayout>
-    
-
 </ScrollView>
