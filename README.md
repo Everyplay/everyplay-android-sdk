@@ -26,6 +26,16 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.2.1 - Dec 10th 2014 (build 1210)
+
+- Generic:
+    - App specific cached files now get removed upon
+      application uninstallation
+
+    - Improved caching
+
+    - Minor UI and theming improvements
+
 ### v1.2 - Nov 28th 2014 (build 1200)
 
 - Generic:
