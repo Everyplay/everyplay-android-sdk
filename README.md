@@ -26,6 +26,12 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.2.2 - Dec 16th 2014 (build 1220)
+
+- Generic:
+    - Fixed a rare ClassNotFoundException with Parcel unable to find
+      com.everyplay.Everyplay.communication.EveryplayResultReceiver
+
 ### v1.2.1 - Dec 10th 2014 (build 1210)
 
 - Generic:
