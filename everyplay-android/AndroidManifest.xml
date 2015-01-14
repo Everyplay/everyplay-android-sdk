@@ -3,7 +3,8 @@
   <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-  <application android:label="@string/everyplay_app_name" android:debuggable="false">
+  <!-- android:label="@string/everyplay_app_name" -->
+  <application >
        <activity
          android:name="com.everyplay.Everyplay.view.EveryplaySocialActivity" 
            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"

@@ -17,7 +17,8 @@ channels won't have this behaviour.
 
 Current and previous expiration dates:
 
-- 2015-01-31 (releases from 1.1.3 to CURRENT)
+- 2015-05-31 (releases from 1.2.3 to CURRENT)
+- 2015-01-31 (releases from 1.1.3 to 1.2.2)
 - 2014-09-14 (releases from 1.1 to 1.1.2)
 - 2014-05-31 (releases from 1.0.5 to 1.0.6)
 - 2014-04-30 (releases from 1.0.3 to 1.0.4)
@@ -26,98 +27,103 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.2.3 - Jan 14th 2015 (build 1230)
+
+- Fix a null pointer exception that could cause a crash on some
+  Android 5 Lollipop devices
+
+- Fix a graphics performance issue with glDiscardFramebufferEXT
+  that could affect some Android versions/drivers shipped
+
+- Fix a CORS issue with Android 5 WebResourceResponse
+
+- Improved Facebook integration by asking server-side
+  configuration status
+
 ### v1.2.2 - Dec 16th 2014 (build 1220)
 
-- Generic:
-    - Fixed a rare ClassNotFoundException with Parcel unable to find
-      com.everyplay.Everyplay.communication.EveryplayResultReceiver
+- Fixed a rare ClassNotFoundException with Parcel unable to find
+  com.everyplay.Everyplay.communication.EveryplayResultReceiver
 
 ### v1.2.1 - Dec 10th 2014 (build 1210)
 
-- Generic:
-    - App specific cached files now get removed upon
-      application uninstallation
+- App specific cached files now get removed upon
+  application uninstallation
 
-    - Improved caching
+- Improved caching
 
-    - Minor UI and theming improvements
+- Minor UI and theming improvements
 
 ### v1.2 - Nov 28th 2014 (build 1200)
 
-- Generic:
-    - Generic optimizations against the new Everyplay community
+- Generic optimizations against the new Everyplay community
 
-    - New navigation top bar design to give more space while browsing
+- New navigation top bar design to give more space while browsing
 
-    - Network access and caching optimizations
+- Network access and caching optimizations
 
-    - Internal changes for UI theming support
+- Internal changes for UI theming support
 
-    - 3rdparty java code is relocated to another package namespace
-      to avoid conflicts
+- 3rdparty java code is relocated to another package namespace
+  to avoid conflicts
 
-    - Performance updates to media merging and trimming
+- Performance updates to media merging and trimming
 
-    - Everyplay.setMaxRecordingMinutesLength didn't trim the
-      resulting video, fixed
+- Everyplay.setMaxRecordingMinutesLength didn't trim the
+  resulting video, fixed
 
-    - Fixed potential crash issue with camera photo picker
+- Fixed potential crash issue with camera photo picker
 
-    - Upload performance improvements
+- Upload performance improvements
 
-    - Everyplay.initEveryplay now retains IEveryplayListener
+- Everyplay.initEveryplay now retains IEveryplayListener
 
-    - Try-catch blocks for rare exceptions added
+- Try-catch blocks for rare exceptions added
 
 ### v1.1.6 - Nov 10th 2014 (build 1160)
 
-- Generic:
-    - Changes to activity handling in code and on AndroidManifest.xml
-      to fix GPU driver issues and potential crashes
+- Changes to activity handling in code and on AndroidManifest.xml
+  to fix GPU driver issues and potential crashes
 
-    - Improved AAC encoded sound quality
+- Improved AAC encoded sound quality
 
-    - Improved Facebook behaviour for the future
+- Improved Facebook behaviour for the future
 
 ### v1.1.5 - Oct 9th 2014 (build 1150)
 
-- Generic:
-    - Fixed Facebook sharing to work against Facebook API 2.0
-      and later
+- Fixed Facebook sharing to work against Facebook API 2.0
+  and later
 
 ### v1.1.4 - Oct 1st 2014 (build 1140)
 
-- Generic:
-    - Video resolution handling improvements
+- Video resolution handling improvements
 
 ### v1.1.3 - Aug 27th 2014 (build 1130)
 
-- Generic:
-    - First official support for non-Unity game engines. For Android
-      example applications, check out:
+- First official support for non-Unity game engines. For Android
+  example applications, check out:
 
-      https://github.com/Everyplay/everyplay-android-examples
+  https://github.com/Everyplay/everyplay-android-examples
 
-    - Now comes with Adobe AIR support:
+- Now comes with Adobe AIR support:
 
-      https://github.com/Everyplay/everyplay-air-sdk
+  https://github.com/Everyplay/everyplay-air-sdk
 
-    - Some devices and applications had image quality issues/artifacts
-      before video encoding step, fixed
+- Some devices and applications had image quality issues/artifacts
+  before video encoding step, fixed
 
-    - Starting recording with HUD-less enabled could have caused frame
-      glitch once while starting, fixed
+- Starting recording with HUD-less enabled could have caused frame
+  glitch once while starting, fixed
 
-    - Fix network retry handling in Everyplay splash screen
+- Fix network retry handling in Everyplay splash screen
 
-    - Analytics improvements
+- Analytics improvements
 
-    - Unity plugin relocated to https://github.com/everyplay/everyplay-unity-sdk
+- Unity plugin relocated to https://github.com/everyplay/everyplay-unity-sdk
 
 ### v1.1.2 - June 17th 2014 (build 1120)
 
 - Generic:
-
     - Fixed recording from not working if changing MSAA anti-aliasing
       state during runtime
 
@@ -129,7 +135,6 @@ Everyplay SDK/Android - Release Notes
     - Improved videoplayer thread safety
 
 - Unity plugin:
-
     - Fixed iOS build error against Unity 4.5.1
 
     - Fixed a potential exception error with Xcode project editor
@@ -139,7 +144,6 @@ Everyplay SDK/Android - Release Notes
 ### v1.1.1 - May 20th 2014 (build 1110)
 
 - Generic:
-
     - Workaround for ImgTec PowerVR GPU driver behaviour that
       could cause entire device to freeze after initialization
 
