@@ -21,6 +21,14 @@ dependencies {
 android {
     compileSdkVersion 21
     buildToolsVersion '21.1.1'
+    defaultPublishConfig "release"
+
+    defaultConfig {
+        minSdkVersion 1
+        targetSdkVersion 21
+        versionCode 1230
+        versionName "1.2.3"
+    }
 
     buildTypes {
         release {
