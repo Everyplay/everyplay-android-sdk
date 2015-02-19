@@ -32,6 +32,7 @@ android {
 
     buildTypes {
         release {
+            debuggable false
             proguardFile getDefaultProguardFile('proguard-android.txt')
             proguardFile 'proguard-project.txt'
         }
