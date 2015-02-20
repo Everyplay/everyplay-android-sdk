@@ -23,7 +23,7 @@
     <include
         android:id="@+id/everyplaySocialLayoutTopBar"
         layout="@layout/everyplay_social_topbar"
-        android:layout_height="45dp"
+        android:layout_height="56dp"
         android:layout_width="match_parent" />
     
     <View android:layout_width="match_parent"

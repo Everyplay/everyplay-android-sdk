@@ -27,6 +27,21 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.2.4 - Feb 20th 2015 (build 1240)
+
+- More Android 5 Lollipop and Android Simulator fixes;
+  null pointer exceptions, activity handling changes
+
+- Fixed an issue with 64bit Android 5 devices that prevented
+  looking up package name properly
+
+- Querying device specific settings now wait until
+  Everyplay.initEveryplay is called
+
+- Facebook: Remove use of deprecated publish_stream permission
+
+- Lighter UI theme
+
 ### v1.2.3 - Jan 14th 2015 (build 1230)
 
 - Fix a null pointer exception that could cause a crash on some

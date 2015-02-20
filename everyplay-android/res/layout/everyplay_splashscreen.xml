@@ -63,11 +63,11 @@
 
     <Button
         android:id="@+id/splashScreenCloseButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_margin="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/everyplay_topbar_closebutton"
         android:minHeight="20dp"
         android:minWidth="20dp"

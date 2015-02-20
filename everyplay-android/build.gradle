@@ -8,7 +8,6 @@ buildscript {
     repositories {
         mavenCentral()
     }
-
     dependencies {
         classpath 'com.android.tools.build:gradle:1.0.0'
     }
@@ -20,19 +19,23 @@ dependencies {
 
 android {
     compileSdkVersion 21
-    buildToolsVersion '21.1.1'
+    buildToolsVersion "21.1.2"
     defaultPublishConfig "release"
 
     defaultConfig {
-        minSdkVersion 1
-        targetSdkVersion 21
-        versionCode 1230
-        versionName "1.2.3"
+        versionCode 1240
+        versionName "1.2.4"
     }
 
     buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+        }
+
         release {
             debuggable false
+            minifyEnabled true
             proguardFile getDefaultProguardFile('proguard-android.txt')
             proguardFile 'proguard-project.txt'
         }
