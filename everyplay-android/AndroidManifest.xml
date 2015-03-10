@@ -19,7 +19,7 @@
            android:theme="@android:style/Theme.NoTitleBar"
            android:windowSoftInputMode="stateVisible|adjustResize"
            android:screenOrientation="sensor"
-           android:hardwareAccelerated="true" />
+           android:hardwareAccelerated="false" />
        
        <activity
          android:name="com.everyplay.Everyplay.view.videoplayer.EveryplayVideoPlayerActivity"
@@ -52,21 +52,21 @@
            android:theme="@android:style/Theme.NoTitleBar"
            android:windowSoftInputMode="adjustResize"
            android:screenOrientation="sensor"
-           android:hardwareAccelerated="true" />
+           android:hardwareAccelerated="false" />
        
        <activity
          android:name="com.everyplay.Everyplay.view.auth.EveryplayAuthActivity"
            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
            android:theme="@android:style/Theme.NoTitleBar"
            android:screenOrientation="sensor"
-           android:hardwareAccelerated="true"
+           android:hardwareAccelerated="false"
            android:windowSoftInputMode="adjustResize" />
        
        <activity
          android:name="com.everyplay.Everyplay.view.auth.EveryplayAddConnectionActivity"
            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
            android:theme="@android:style/Theme.Dialog"
-           android:hardwareAccelerated="true"
+           android:hardwareAccelerated="false"
            android:screenOrientation="sensor"
            android:windowSoftInputMode="adjustResize" />
        
@@ -74,7 +74,7 @@
          android:name="com.everyplay.Everyplay.communication.socialnetworks.EveryplayFacebook"
            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
            android:theme="@android:style/Theme.Dialog"
-           android:hardwareAccelerated="true"
+           android:hardwareAccelerated="false"
            android:screenOrientation="sensor"
            android:windowSoftInputMode="adjustResize" />
        
