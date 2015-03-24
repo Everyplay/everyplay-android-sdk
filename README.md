@@ -27,6 +27,23 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.3.1 - Mar 24th 2015 (build 1310)
+
+- Fixed a regression with setMaxRecordingMinutesLength from not
+  working against the new graphics backend on Android 4.3+
+
+- Improved potential memory usage and buffer refcount
+  issues for some GPU drivers
+
+- Fixed potential exceptions for general login, sharing
+  and Facebook related code
+
+- Fixed video player view from not loading on Android 4.0.x
+
+- Fixed exception with the photo picker
+
+- AndroidManifest.xml tweak to allow Android TV support
+
 ### v1.3.0 - Mar 10th 2015 (build 1300)
 
 - All-new graphics processing backend for Android 4.3+, improving
