@@ -17,7 +17,8 @@ channels won't have this behaviour.
 
 Current and previous expiration dates:
 
-- 2015-05-31 (releases from 1.2.3 to CURRENT)
+- 2015-09-14 (releases from 1.3.2 to CURRENT)
+- 2015-05-31 (releases from 1.2.3 to 1.3.1)
 - 2015-01-31 (releases from 1.1.3 to 1.2.2)
 - 2014-09-14 (releases from 1.1 to 1.1.2)
 - 2014-05-31 (releases from 1.0.5 to 1.0.6)
@@ -26,6 +27,20 @@ Current and previous expiration dates:
 
 Everyplay SDK/Android - Release Notes
 =====================================
+
+### v1.3.2 - Apr 16th 2015 (build 1320)
+
+- Improved graphics support against Unity 5.x
+
+- Multiple stability fixes against ImgTec PowerVR GPU
+
+- Improve OpenGL ES1 support checking
+
+- Prefetching data could cause an exception, fixed
+
+- Fixed a rare login exception on Android 4.0.x
+
+- Minor audio handling improvements
 
 ### v1.3.1 - Mar 24th 2015 (build 1310)
 
