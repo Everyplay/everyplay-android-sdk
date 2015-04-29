@@ -28,6 +28,24 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.3.3 - Apr 28th 2015 (build 1330)
+
+- Video quality improvement: On some devices and video codecs,
+  the first second of the recording showed up as bit rotten,
+  garbled output, fixed
+
+- Fixed a graphics width vs stride regression from 1.3.0 SDK that
+  could show up against the new graphics backend on some devices
+  and driver versions, like Nexus 7 running Android 4.4
+
+- On some rare devices, querying video codec info could cause
+  application load times to slow down by 10 seconds, fixed
+
+- Improved Everyplay.snapshotRenderbuffer() aka
+  HUD-less recording feature
+
+- Fix graphics issue with Samsung Galaxy S4 (PowerVR variant)
+
 ### v1.3.2 - Apr 16th 2015 (build 1320)
 
 - Improved graphics support against Unity 5.x
