@@ -23,7 +23,7 @@ android {
     defaultPublishConfig "release"
 
     defaultConfig {
-        versionCode 1331
+        versionCode 1332
         versionName "1.3.3"
     }
 

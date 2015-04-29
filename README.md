@@ -28,7 +28,7 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
-### v1.3.3 - Apr 28th 2015 (build 1331)
+### v1.3.3 - Apr 29th 2015 (build 1332)
 
 - Video quality improvement: On some devices and video codecs,
   the first second of the recording showed up as bit rotten,
