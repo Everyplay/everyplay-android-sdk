@@ -28,6 +28,21 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.3.4 - May 26th 2015 (build 1340)
+
+- More video quality improvements for some devices
+
+- Workaround a driver issue with Qualcomm Adreno 420's that
+  caused a crash in some situations
+
+- Fix graphics issue with Samsung Galaxy S5
+
+- Removed support for file based thumbnails. If you use thumbnails,
+  switch to texture based implementation
+
+- Improved error handling on some situations where the video files
+  could end up invalid, potentially causing a crash
+
 ### v1.3.3 - Apr 29th 2015 (build 1332)
 
 - Video quality improvement: On some devices and video codecs,
