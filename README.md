@@ -28,6 +28,22 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.3.5 - June 2nd 2015 (build 1350)
+
+- New feature: Failsafe mode. If there's a crash during early
+  initialization of Everyplay, the recording support will be
+  disabled when the application is launched the next time
+
+  Since the bug might be OS/driver related, the need for Failsafe
+  mode is re-evaluated each time the SDK or OS has been upgraded
+  or the application is removed
+
+- Now supports Android M preview and fixes a crash against it.
+  Older SDKs are disabled from recording against Android M
+
+- More Qualcomm Adreno 420 crash fixes for some devices, like
+  Samsung Galaxy Note 4
+
 ### v1.3.4 - May 26th 2015 (build 1340)
 
 - More video quality improvements for some devices
