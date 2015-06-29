@@ -28,6 +28,26 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.4.0 - June 29th 2015 (build 1400)
+
+- Now allows 60fps recordings on Android 4.4+ devices
+
+  To change the target framerate from the default 30fps,
+  call Everyplay.setTargetFPS()
+
+- Improved frame synchronization and framerate handling
+
+- Fixed an audio issue with FMOD Studio that
+  could have resulted to a silent recording
+
+- Removed setThumbnailWidth method from Everyplay class
+
+- Removed onEveryplayThumbnailReadyAtFilePath from IEveryplayListener
+
+- Fixed an issue with PowerVR GPUs and continuous recording feature:
+  If recording over 5 minutes while using setMaxRecordingMinutesLength,
+  the device could freeze, fixed
+
 ### v1.3.5 - June 2nd 2015 (build 1350)
 
 - New feature: Failsafe mode. If there's a crash during early
