@@ -1,93 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal" >
 
-    <RelativeLayout
-        android:id="@+id/editorBrowseButton"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:background="@drawable/everyplay_editor_button_background"
-        android:clickable="true" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <LinearLayout android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true" >
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/iconAndTextButtonIcon"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/everyplay_editor_everyplay" />
+            <ImageButton
+            android:id="@+id/editorBrowseButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="3dp"
+            android:src="@drawable/everyplay_editor_everyplay"
+            android:background="@drawable/everyplay_video_round_button" />
 
-            <RelativeLayout
-                android:id="@+id/RelativeLayout01"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent" >
-
-                <TextView
-                    android:id="@+id/TextView02"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="@string/everyplay_browse_text"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/everyplay_editor_button_text"
-                    android:textSize="24dp" />
-            </RelativeLayout>
         </LinearLayout>
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/editorShareButton"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/everyplay_editor_button_background"
-        android:clickable="true" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <LinearLayout android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true" >
+            android:gravity="right"
+            android:orientation="horizontal" 
+            android:layout_weight="1">
+    
+            <ImageButton
+            android:id="@+id/everyplayShowFaceCamButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/everyplay_video_icon_facecam"
+            android:scaleType="fitCenter"
+            android:background="@drawable/everyplay_video_round_button"
+            android:visibility="invisible"/>
+        
+            <ImageButton
+            android:id="@+id/everyplayShowMicrophoneAvatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/everyplay_video_icon_audio_commentary"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/everyplay_video_round_button"
+            android:visibility="invisible"/>
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/everyplay_editor_share" />
-
-            <RelativeLayout
-                android:id="@+id/RelativeLayout2"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent" >
-
-                <TextView
-                    android:id="@+id/TextView01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="@string/everyplay_share_text"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textColor="@color/everyplay_editor_button_text"
-                    android:textSize="24dp" />
-            </RelativeLayout>
+            <Button
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="15dp"
+            android:textColor="#ffffffff"
+            android:textAllCaps="false"
+            android:background="@drawable/everyplay_video_oval_button"
+            android:id="@+id/editorShareButton"
+            android:text="Share">
+            </Button>
+            
         </LinearLayout>
-    </RelativeLayout>
-</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

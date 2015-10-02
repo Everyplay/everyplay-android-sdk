@@ -29,6 +29,19 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.5 - Oct 2nd 2015 (build 1500)
+
+- Live FaceCam and adding FaceCam commentary track within
+  the video editor are now implemented, requires Android 4.3+
+
+- AndroidManifest.xml permission changes related to FaceCam
+  added by default. If you don't want to support Live FaceCam
+  or post-gameplay video editor commentary through FaceCam,
+  you can remove the following options:
+
+  - uses-permission: android.permission.CAMERA, android.permission.RECORD_AUDIO
+  - uses-feature: android.hardware.camera, android.hardware.camera.autofocus
+
 ### v1.4.1 - Aug 10th 2015 (build 1410)
 
 - Minor bugfixes

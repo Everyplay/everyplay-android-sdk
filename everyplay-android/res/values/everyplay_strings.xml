@@ -23,6 +23,7 @@
   <string name="everyplay_video_description_text">Video description</string>
   <string name="everyplay_by_username_text">By username</string>
   <string name="everyplay_editor_processing_text">Processing video&#8230;</string>
+  <string name="everyplay_editor_loading_facecam_failed">Loading FaceCam failed!</string>
   <string name="everyplay_connection_failed">Connection failed!</string>
   <string name="everyplay_connection_timeout">Connection timed out!</string>
   <string name="everyplay_connection_success">Connection successful!</string>

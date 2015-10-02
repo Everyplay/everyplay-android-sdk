@@ -23,8 +23,8 @@ android {
     defaultPublishConfig "release"
 
     defaultConfig {
-        versionCode 1410
-        versionName "1.4.1"
+        versionCode 1500
+        versionName "1.5.0"
     }
 
     buildTypes {

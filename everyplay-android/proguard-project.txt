@@ -21,6 +21,9 @@
 
 -keep public class com.everyplay.external.**
 -keep public class com.everyplay.Everyplay.Everyplay
+-keep public class com.everyplay.Everyplay.EveryplayFaceCam
+-keep public class com.everyplay.Everyplay.EveryplayFaceCamPreviewOrigin
+-keep public class com.everyplay.Everyplay.EveryplayFaceCamColor
 -keep public class com.everyplay.Everyplay.communication.EveryplayNativeBridge
 -keep public interface com.everyplay.Everyplay.IEveryplayListener
 -keep public class com.everyplay.Everyplay.communication.EveryplayWebAppBridge
@@ -44,6 +47,16 @@
 }
 
 -keepclassmembers class com.everyplay.Everyplay.Everyplay {
+   public *;
+}
+-keepclassmembers class com.everyplay.Everyplay.EveryplayFaceCam {
+   public *;
+}
+-keep public enum com.everyplay.Everyplay.EveryplayFaceCamPreviewOrigin {
+  **[] $VALUES;
+  public *;
+}
+-keepclassmembers class com.everyplay.Everyplay.EveryplayFaceCamColor {
    public *;
 }
 -keepclassmembers class com.everyplay.Everyplay.communication.EveryplayNativeBridge {
