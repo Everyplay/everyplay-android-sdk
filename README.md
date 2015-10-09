@@ -29,6 +29,14 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.5.1 - Oct 9th 2015 (build 1510)
+
+- Fix Live FaceCam camera session handling when
+  coming back to the application
+
+- Failsafe mode no longer triggers too easily by
+  loading the application and exiting immediately
+
 ### v1.5 - Oct 2nd 2015 (build 1500)
 
 - Live FaceCam and adding FaceCam commentary track within
