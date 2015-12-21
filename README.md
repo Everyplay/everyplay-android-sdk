@@ -17,7 +17,8 @@ channels won't have this behaviour.
 
 Current and previous expiration dates:
 
-- 2016-02-14 (releases from 1.4.1 to CURRENT)
+- 2016-09-12 (releases from 1.5.2 to CURRENT)
+- 2016-02-14 (releases from 1.4.1 to 1.5.1)
 - 2015-09-14 (releases from 1.3.2 to 1.4)
 - 2015-05-31 (releases from 1.2.3 to 1.3.1)
 - 2015-01-31 (releases from 1.1.3 to 1.2.2)
@@ -28,6 +29,12 @@ Current and previous expiration dates:
 
 Everyplay SDK/Android - Release Notes
 =====================================
+
+### v1.5.2 - Dec 21st 2015 (build 1520)
+
+- Fixes an audio related crash with FMODAudioDevice
+
+- FaceCam improvements
 
 ### v1.5.1 - Oct 9th 2015 (build 1510)
 
