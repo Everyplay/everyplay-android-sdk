@@ -30,6 +30,10 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.5.3 - Jan 27th 2016 (build 1530)
+
+- Fixed a regression that caused flickering on some devices when using HUD-less recording
+
 ### v1.5.2 - Dec 21st 2015 (build 1520)
 
 - Fixes an audio related crash with FMODAudioDevice
