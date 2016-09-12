@@ -17,7 +17,8 @@ channels won't have this behaviour.
 
 Current and previous expiration dates:
 
-- 2016-09-12 (releases from 1.5.2 to CURRENT)
+- 2017-09-12 (releases fron 1.5.4 to CURRENT)
+- 2016-09-12 (releases from 1.5.2 to 1.5.3)
 - 2016-02-14 (releases from 1.4.1 to 1.5.1)
 - 2015-09-14 (releases from 1.3.2 to 1.4)
 - 2015-05-31 (releases from 1.2.3 to 1.3.1)
@@ -29,6 +30,18 @@ Current and previous expiration dates:
 
 Everyplay SDK/Android - Release Notes
 =====================================
+
+### v1.5.4 - Sep 12th 2016 (build 1540)
+
+- Recording on Android N has been temporarily disabled. It will be activated on the upcoming SDK release
+
+- Added a method SetMaxRecordingSecondsLength for setting the max recording length in seconds
+
+- Audio recording improvements
+
+- Fixed a bug where recording was disabled after the first time on some devices
+
+- Fixed a crash when uploading video link to Google Drive
 
 ### v1.5.3 - Jan 27th 2016 (build 1530)
 
