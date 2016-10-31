@@ -17,7 +17,7 @@ channels won't have this behaviour.
 
 Current and previous expiration dates:
 
-- 2017-09-12 (releases fron 1.5.4 to CURRENT)
+- 2017-09-12 (releases from 1.5.4 to CURRENT)
 - 2016-09-12 (releases from 1.5.2 to 1.5.3)
 - 2016-02-14 (releases from 1.4.1 to 1.5.1)
 - 2015-09-14 (releases from 1.3.2 to 1.4)
@@ -30,6 +30,12 @@ Current and previous expiration dates:
 
 Everyplay SDK/Android - Release Notes
 =====================================
+
+### v1.5.5 - Oct 31st 2016 (build 1550)
+
+- Improved failsafe mechanism
+
+- Android N recording support
 
 ### v1.5.4 - Sep 12th 2016 (build 1540)
 
