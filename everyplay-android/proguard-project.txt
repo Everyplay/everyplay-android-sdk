@@ -33,6 +33,8 @@
 -keep public class com.everyplay.Everyplay.unity.EveryplayUnity3DWrapper
 -keep public class com.everyplay.Everyplay.encoding.MediaMuxer
 -keep public class android.media.MediaMuxer
+-keep public class android.net.http.SslError
+-keep public class android.webkit.WebViewClient
 
 -keep public class **.R {
   public *;
@@ -86,11 +88,22 @@
 -keepclassmembers class android.media.MediaMuxer {
    *;
 }
+
+-keep public class org.apache.**
+-keepclassmembers class org.apache.** {
+  public *;
+}
+
 -assumenosideeffects class com.everyplay.Everyplay.device.EveryplayDeviceLog {
   public static void entered();
   public static void debug(java.lang.String,java.lang.Object[]);
   public static void debug(java.lang.String);
 }
+
 -keepclassmembers class * extends com.everyplay.Everyplay.EveryplayAbstractViewComponent {
    public void *(android.view.View);
 }
+-dontwarn org.apache.**
+-dontwarn android.webkit.WebView
+-dontwarn android.net.http.SslError
+-dontwarn android.webkit.WebViewClient
