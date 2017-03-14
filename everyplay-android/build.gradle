@@ -1,9 +1,3 @@
-import org.apache.tools.ant.taskdefs.condition.Os
-/*
-ant.importBuild('build.xml') {
-    antTargetName -> 'ant-' + antTargetName
-}
-*/
 apply plugin: 'com.android.library'
 
 repositories {
@@ -11,51 +5,28 @@ repositories {
 }
 
 buildscript {
-        repositories {
+    repositories {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:1.0.0'
     }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:support-v4:24.1.1'
-}
-
-def getNdkDir() {
-    if (System.env.ANDROID_NDK_ROOT != null)
-        return System.env.ANDROID_NDK_ROOT
-
-    Properties properties = new Properties()
-    properties.load(project.rootProject.file('local.properties').newDataInputStream())
-    def ndkdir = properties.getProperty('ndk.dir', null)
-    if (ndkdir == null)
-        throw new GradleException("NDK location not found. Define location with ndk.dir in the local.properties file or with an ANDROID_NDK_ROOT environment variable.")
-
-    return ndkdir
-}
-
-def getNdkBuildCmd() {
-    def ndkbuild = getNdkDir() + "/ndk-build"
-    if (Os.isFamily(Os.FAMILY_WINDOWS))
-        ndkbuild += ".cmd"
-
-    return ndkbuild
+    compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '23.0.1'
-    defaultPublishConfig "debug"
-    useLibrary 'org.apache.http.legacy'
+    buildToolsVersion "23.0.1"
+    defaultPublishConfig "release"
+
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 23
-        versionCode 1560
+        versionCode 1561
         versionName "1.5.6"
     }
+
     buildTypes {
         debug {
             debuggable true
@@ -65,133 +36,23 @@ android {
         release {
             debuggable false
             minifyEnabled true
-            proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
+            proguardFile getDefaultProguardFile('proguard-android.txt')
             proguardFile 'proguard-project.txt'
         }
     }
+
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
             java.srcDirs = ['src']
-            resources.srcDirs = ['src']
             aidl.srcDirs = ['src']
             renderscript.srcDirs = ['src']
             res.srcDirs = ['res']
-            assets.srcDirs = ['assets']
             jniLibs.srcDirs = ['libs']
-            jni.srcDirs = []
         }
-
-        // Move the tests to tests/java, tests/res, etc...
-        //instrumentTest.setRoot('tests')
-
-        // Move the build types to build-types/<type>
-        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
-        // This moves them out of them default location under src/<type>/... which would
-        // conflict with src/ being used by the main source set.
-        // Adding new build types or product flavors should be accompanied
-        // by a similar customization.
-
-        debug.setRoot('build-types/debug')
-        release.setRoot('build-types/release')
 
         lintOptions {
             abortOnError false
         }
-    }
-    // call regular ndk-build(.cmd) script from app directory
-    task ndkBuild(type: Exec) {
-        String exe = getNdkBuildCmd()
-        commandLine exe, '-C', file('jni').absolutePath
-    }
-    // call regular ndk-build(.cmd) script from app directory
-    task ndkBuildClean(type: Exec) {
-        String exe = getNdkBuildCmd()
-        commandLine exe, '-C', file('jni').absolutePath, 'clean'
-    }
-    tasks.withType(JavaCompile) {
-        compileTask -> compileTask.dependsOn ndkBuild
-    }
-    productFlavors {
-    }
-}
-    task clearJar(type: Delete) {
-        delete 'libs/everyplay.jar'
-    }
-
-    task makeJar(type: Copy) {
-        from('build/intermediates/bundles/release/')
-        into('build/libs/')
-        include('classes.jar')
-        rename ('classes.jar', 'everyplay.jar')
-    }
-    makeJar.dependsOn(clearJar, build)
-
-    task prepareJarProject(type: Copy) {
-        def exportDir = new File('build/exportedJarProject/libs/')
-        delete exportDir
-        exportDir.mkdirs()
-
-        from('build/libs/')
-        include ('everyplay.jar')
-
-
-        from('libs/')
-        include ('armeabi-v7a/')
-        include ('x86/')
-
-        into(exportDir)
-    }
-    prepareJarProject.dependsOn(makeJar)
-
-    task copySupportLibrary(type: Copy) {
-        from(rootProject.projectDir)
-        into('build/exportedJarProject/libs/')
-        include('android-support-v4.jar')
-    }
-    copySupportLibrary.dependsOn(prepareJarProject)
-
-    task exportJarProject(type: Copy) {
-        from(rootProject.projectDir)
-        into('build/exportedJarProject/')
-        include('AndroidManifest.xml')
-        include('build.gradle')
-        include('build.xml')
-        include('proguard-project.txt')
-        include('project.properties')
-        include('res/')
-    }
-    exportJarProject.dependsOn(copySupportLibrary)
-
-    clean.dependsOn 'ndkBuildClean'
-
-///////////////////////////////////////////////////////////////
-// SonarQube section
-
-buildscript {
-    repositories {
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-    dependencies {
-        classpath "org.sonarqube.gradle:gradle-sonarqube-plugin:1.1"
-    }
-}
-
-apply plugin: "org.sonarqube"
-
-sonarqube {
-    properties {
-        property "sonar.projectKey", "everyplay-android"
-        property "sonar.projectName", "Everyplay Android"
-        property "sonar.projectVersion", "1.5.6"
-        property "sonar.projectBaseDir", "."
-        property "sonar.sourceEncoding", "UTF-8"
-
-        property "sonar.host.url", "${System.env.SONAR_HOST}"
-        //property "sonar.jdbc.url", "${System.env.SONAR_JDBC}"
-        //property "sonar.jdbc.username", "${System.env.SONAR_USERNAME}"
-        //property "sonar.jdbc.password", "${System.env.SONAR_PASSWORD}"
     }
 }

@@ -32,6 +32,10 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### Android v1.5.6-1561 - Mar 1st 2017 
+
+- Gradle build file fixes
+
 ### v1.5.6 - Feb 14th 2017
 
 - Live permissions support
