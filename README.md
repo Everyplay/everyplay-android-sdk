@@ -17,7 +17,8 @@ channels won't have this behaviour.
 
 Current and previous expiration dates:
 
-- 2017-02-14 (releases from 1.5.6 to CURRENT)
+- 2018-09-12 (releases from 1.5.7 to CURRENT)
+- 2017-09-12 (releases from 1.5.6 to 1.5.6)
 - 2016-09-12 (releases from 1.5.4 to 1.5.5)
 - 2016-09-12 (releases from 1.5.2 to 1.5.3)
 - 2016-02-14 (releases from 1.4.1 to 1.5.1)
@@ -32,7 +33,17 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
-### v1.5.6-1561 - Mar 1st 2017 
+### v1.5.7 - May 22nd 2017
+
+- Removed dependency to support lib
+
+- Disabled incompatible Huawei Kirin based devices for now
+
+- Better Gradle compatibility (2.2.0)
+
+- Gradle build fix for Windows
+
+### v1.5.6-1561 - Mar 1st 2017
 
 - Gradle build file fixes
 

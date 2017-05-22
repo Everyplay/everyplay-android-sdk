@@ -1,3 +1,4 @@
+// UNITY EXPORT COMPATIBLE
 apply plugin: 'com.android.library'
 
 repositories {
@@ -23,8 +24,8 @@ android {
     defaultPublishConfig "release"
 
     defaultConfig {
-        versionCode 1561
-        versionName "1.5.6"
+        versionCode 1570
+        versionName "1.5.7"
     }
 
     buildTypes {

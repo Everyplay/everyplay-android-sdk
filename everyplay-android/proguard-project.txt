@@ -18,7 +18,7 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
-
+-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod
 -keep public class com.everyplay.external.**
 -keep public class com.everyplay.Everyplay.Everyplay
 -keep public class com.everyplay.Everyplay.EveryplayFaceCam
