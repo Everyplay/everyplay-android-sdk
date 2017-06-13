@@ -33,6 +33,10 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.5.8 - June 13th 2017
+
+- Fixed Google login and YouTube sharing
+
 ### v1.5.7 - May 22nd 2017
 
 - Removed dependency to support lib
