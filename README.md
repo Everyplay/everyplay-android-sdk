@@ -33,6 +33,16 @@ Current and previous expiration dates:
 Everyplay SDK/Android - Release Notes
 =====================================
 
+### v1.5.9 - Sep 7th 2017
+
+- Enabled recording on 32bit Huawei Kirin devices
+
+- Fixed Samsung S8 recording
+
+- Fixed Android O audio recording
+
+- Fixed YouTube sharing
+
 ### v1.5.8 - June 13th 2017
 
 - Fixed Google login and YouTube sharing
