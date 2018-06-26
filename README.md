@@ -1,37 +1,25 @@
-Welcome to Everyplay. To get started, make sure you have an account registered, and that you have a unique client ID
-for your game. You can get these along with the latest integration instructions at https://developers.everyplay.com/
+Goodbye Everyplay. This project has been discontinued.
 
-You can always download the latest SDK upgrades directly from https://github.com/everyplay/everyplay-android-sdk
+Last iOS release: https://github.com/everyplay/everyplay-ios-sdk
 
-Looking for iOS version? See https://github.com/everyplay/everyplay-ios-sdk
-<br />
-Looking for Unity plugin? See https://github.com/everyplay/everyplay-unity-sdk
-<br />
-Looking for Adobe AIR version? See https://github.com/everyplay/everyplay-air-sdk
+Last Android release: https://github.com/everyplay/everyplay-android-sdk
 
-Everyplay SDK is licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html) with restrictions. Please see Everyplay Terms of Service at https://everyplay.com/developer-terms-of-service for more information.
+Last Unity release: https://github.com/everyplay/everyplay-unity-sdk
 
-For now, each SDK release has an expiration date. After expiring, there's a warning dialog on launch
-that recommends to upgrade the SDK. Apps downloaded from the Google Play Store or similar distribution
-channels won't have this behaviour.
-
-Current and previous expiration dates:
-
-- 2018-09-12 (releases from 1.5.7 to CURRENT)
-- 2017-09-12 (releases from 1.5.6 to 1.5.6)
-- 2016-09-12 (releases from 1.5.4 to 1.5.5)
-- 2016-09-12 (releases from 1.5.2 to 1.5.3)
-- 2016-02-14 (releases from 1.4.1 to 1.5.1)
-- 2015-09-14 (releases from 1.3.2 to 1.4)
-- 2015-05-31 (releases from 1.2.3 to 1.3.1)
-- 2015-01-31 (releases from 1.1.3 to 1.2.2)
-- 2014-09-14 (releases from 1.1 to 1.1.2)
-- 2014-05-31 (releases from 1.0.5 to 1.0.6)
-- 2014-04-30 (releases from 1.0.3 to 1.0.4)
-- 2014-03-31 (releases from 1.0 to 1.0.2)
+Everyplay SDK is licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html) with restrictions. ~~Please see Everyplay Terms of Service at https://everyplay.com/developer-terms-of-service for more information.~~
 
 Everyplay SDK/Android - Release Notes
 =====================================
+
+### v1.6.0 - Jun 26th 2018
+
+- Removed social functionality
+- Changed Everyplay.showEveryplaySharingModal() to open native share sheet instead of Everyplay Sharing Modal
+- Added Everyplay.getFilePath() to get path to the recorded file (see USAGE.md)
+- Updated buildtools version 
+- Gradle fixes
+- 64-bit Huawei fixed
+- Qualcomm 8xxx/Adreno series fixed (Samsung s8,s8+,s9,s9+...)
 
 ### v1.5.9 - Sep 7th 2017
 

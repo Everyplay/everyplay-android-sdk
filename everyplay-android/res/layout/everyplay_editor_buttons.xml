@@ -13,16 +13,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageButton
-            android:id="@+id/editorBrowseButton"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:scaleType="fitCenter"
-            android:layout_marginLeft="15dp"
-            android:paddingRight="3dp"
-            android:src="@drawable/everyplay_editor_everyplay"
-            android:background="@drawable/everyplay_video_round_button" />
-
         </LinearLayout>
 
         <LinearLayout android:layout_width="match_parent"
